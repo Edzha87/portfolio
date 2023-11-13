@@ -1,0 +1,303 @@
+/* CSS RESET -------------------------------------------------------------------------*/
+/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+nav ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+/* GLOBAL STYLES */
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input[type=text],
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+input {
+    font-size: 1.6rem;
+}
+
+main {
+    display: block;
+    position: relative;
+    z-index: 5400;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 128rem;
+    position: relative;
+    margin: auto;
+    z-index: 150;
+}
+
+/* HEADER STYLES */
+header {
+    height: 20rem;
+}
+
+header .wrapper {
+    height: 20rem;
+    border-bottom: #000 solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+header .square {
+    width: 20rem;
+    height: 20rem;
+    border-right: #000 solid 1px;
+}
+
+header .square img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100%;
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+}
+
+header .side {
+    height: 20rem;
+    width: calc(100% - 20rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 7rem;
+    font-style: italic
+}
+
+header .side h1 {
+    font-weight: 400;
+}
+
+/* MAIN STYLES */
+main .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main .wrapper aside {
+    width: 20rem;
+    border-right: #000 solid 1px;
+    min-height: calc(100vh - 27.9rem)
+}
+
+main .wrapper aside nav {
+    font-size: 2.2rem;
+    padding: 5rem 0
+}
+
+main .wrapper aside nav li {
+    padding-bottom: 2rem;
+    transition: all 0.2s ease-in;
+}
+
+main .wrapper aside nav li:hover {
+    transform: translateX(1.5rem);
+}
+
+main .wrapper aside nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+main .content {
+    width: calc(100% - 20rem);
+    padding: 5rem 0 5rem 3rem;
+}
+
+main .content h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+main .content p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/* FOOTER STYLES */
+footer {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+footer .wrapper {
+    padding: 3rem 0;
+    border-top: #000 solid 1px;
+}
