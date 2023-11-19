@@ -258,7 +258,7 @@ main .wrapper aside {
 
 main .wrapper aside nav {
     font-size: 2.2rem;
-    padding: 5rem 0
+    padding: 5rem 0 3rem 0
 }
 
 main .wrapper aside nav li {
@@ -273,6 +273,11 @@ main .wrapper aside nav li:hover {
 main .wrapper aside nav li a {
     text-decoration: none;
     color: #000;
+}
+
+main .wrapper aside .socials img {
+    height: 3rem;
+    width: auto;
 }
 
 main .content {
@@ -291,6 +296,139 @@ main .content p {
     line-height: 1.5;
 }
 
+main .content .box-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}
+
+main .content .box-list .box {
+    width: 25%;
+    height: 20rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+main .content .box-list .box .inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .content .box-list .box .overlay {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: #838282;
+    font-weight: 700;
+    left: -100%;
+    transition: all 0.2s ease-in
+}
+
+main .content .box-list .box:nth-child(2) .overlay {
+    font-size: 1.8rem;
+}
+
+main .content .box-list .box:hover .overlay {
+    left: 0;
+}
+
+main .content .box-list .box:nth-child(1) img {
+    height: 14rem;
+    width: auto;
+}
+
+main .content .box-list .box:nth-child(2) img,
+main .content .box-list .box:nth-child(3) img {
+    width: 80%;
+    height: auto;
+}
+
+main .content .box-list .box:nth-child(4) img {
+    height: 8rem;
+    width: auto;
+}
+
+main .content form {
+    margin-top: 2rem;
+}
+
+main .content form label {
+    font-size: 1.8rem;
+}
+
+main .content form input {
+    width: 33%;
+    height: 4rem;
+    border: #000 solid 1px;
+    border-radius: .7rem;
+    padding-left: 1.5rem;
+    margin-top: .7rem;
+}
+
+main .content form textarea {
+    margin-top: .7rem;
+    width: 33%;
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+main .content form button {
+    width: 33%;
+    height: 4rem;
+    margin-top: 1rem;
+    border-radius: .7rem;
+}
+
+main .content .skill-box {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+main .content .skill-box .name {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+main .content .skill-box .line {
+    width: 50%;
+    border: #000 solid 1px;
+    height: 1rem;
+    margin-top: .5rem;
+    position: relative;
+}
+
+main .content .skill-box .line .inner-line {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    transition: all 0.5s ease-in
+}
+
+main .content .skill-box .line .inner-line85 {
+    width: 85%;
+}
+
+main .content .skill-box .line .inner-line65 {
+    width: 65%;
+}
+
+main .content .skill-box .line .inner-line45 {
+    width: 45%;
+}
+
 /* FOOTER STYLES */
 footer {
     text-align: center;
@@ -300,4 +438,100 @@ footer {
 footer .wrapper {
     padding: 3rem 0;
     border-top: #000 solid 1px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    header .side h1,
+    main .content {
+        padding-right: 2rem;
+    }
+
+    main .wrapper aside nav li,
+    main .wrapper aside .socials {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header .side {
+        font-size: 5rem;
+    }
+
+    main .content .skill-box .line,
+    main .content form input,
+    main .content form textarea,
+    main .content form button {
+        width: 100%;
+    }
+
+    main .content .box-list .box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    header,
+    header .wrapper,
+    header .side {
+        height: 10rem;
+    }
+
+    header .square {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    header .square img {
+        width: 8rem;
+        height: 8rem;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    header .side {
+        font-size: 2.6rem;
+        width: calc(100% - 10rem);
+    }
+
+    main .wrapper aside {
+        border-right: none;
+        min-height: auto;
+        width: 100%;
+    }
+
+    main .wrapper aside nav {
+        font-size: 1.6rem;
+        padding: 2.5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+    main .wrapper aside nav ul {
+        width: 100%;
+        padding: 0 2rem 0 0;
+    }
+
+    main .wrapper aside nav li {
+        display: inline;
+    }
+
+    main .wrapper aside .socials {
+        display: none;
+    }
+
+    main .content {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    main .content h2 {
+        font-size: 3rem;
+    }
+
+    main .content .skill-box .name {
+        font-size: 2rem;
+    }
 }
